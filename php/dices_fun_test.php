@@ -5,11 +5,11 @@ require_once('dices_fun.php');
 class DicesFunTest extends PHPUnit_Framework_TestCase {
     public function testSequenceLength() {
         $data = array(
-            array([5, 3, 4, 1, 2, 3], 5),
-            array([7, 7, 7, 6, 4, 3, 1], 2),
-            array([1, 3, 5, 7], 1),
-            array([9, 8, 7, 7, 7, 6, 5, 4], 6),
-            array([1, 2, 3], 3)
+            array(array(5, 3, 4, 1, 2, 3), 5),
+            array(array(7, 7, 7, 6, 4, 3, 1), 2),
+            array(array(1, 3, 5, 7), 1),
+            array(array(9, 8, 7, 7, 7, 6, 5, 4), 6),
+            array(array(1, 2, 3), 3)
         );
 
         foreach ($data as $test_data_and_result) {
